@@ -28,7 +28,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
     <td><button type="button" onclick="alert('แก้ไขข้อมูล')">แก้ไข</button>
-        <button type="button" onclick="alert('ลบข้อมูล')">ลบ</button>
+        <a data-method="delete" href=""<button type="button" onclick="alert('ลบข้อมูล')">ลบ</button></a>
         <a href="form.html"><button type="button" onclick="alert('เพิ่มข้อมูล')">เพิ่ม</button></a>
     </td>
   </tr>
