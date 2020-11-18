@@ -13,10 +13,9 @@ if (mysqli_connect_errno($conn))
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
 <table width="600" border="1">
-<div class="col-md-12">
-        <table class="table table-striped table-bordered table-hover">
-          <caption><a href="form.html" class="btn btn-primary"> เพิ่ม </a></caption>
-</div>
+    <div class="col-md-12">
+        <caption><a href="form.html" class="btn btn-primary"> เพิ่ม </a></caption>
+    </div>
   <tr>
     <th width="100"> <div align="center">Name</div></th>
     <th width="350"> <div align="center">Comment </div></th>
