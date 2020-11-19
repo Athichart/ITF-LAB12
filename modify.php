@@ -26,7 +26,7 @@
           <input type="text" class="form-control" name = "Comment" id="idComment" value="<?php echo "$row[Comment]"; ?>" <br>
         <label for="Username">Link :</label>
           <input type="text" class="form-control" name = "Link" id="idLink" value="<?php echo "$row[Link]"; ?>"> <br><br>
-          <input type="submit" id="commentBtn"class="btn btn-warning">
+          <input type="submit" id="commentBtn"class="btn btn-success">
     </div>
       </form>
 </body>
