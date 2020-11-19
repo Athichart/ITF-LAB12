@@ -3,6 +3,10 @@
 <title>ITF Lab</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
 <?php
@@ -29,9 +33,9 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-    <td><a href="modify.php?ID=<?php echo $Result['ID']?>" class="btn btn-outline-success" onclick="alert('แก้ไขข้อมูล')">แก้ไข</a>
+    <td><a href="modify.php?ID=<?php echo $Result['ID']?>" class="btn btn-success" onclick="alert('แก้ไขข้อมูล')">แก้ไข</a>
         <a href="del.php?ID=<?php echo $Result['ID']?>" class="btn btn-danger" onclick="alert('ลบข้อมูล')">ลบ</a>
-        <a href="form.html" class="btn btn-outline-warning" onclick="alert('เพิ่มข้อมูล')">เพิ่ม</a>
+        <a href="form.html" class="btn btn-warning" onclick="alert('เพิ่มข้อมูล')">เพิ่ม</a>
     </td>
   </tr>
 <?php
