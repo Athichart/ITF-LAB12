@@ -29,3 +29,5 @@ if (mysqli_query($conn, $sql)) {
   <a href="show.php?ID=<?php echo $Result['ID']?>" class="btn btn-info" onclick="alert('กลับสู่หน้าหลัก')">back</a>
 mysqli_close($conn);
 ?>
+</body>
+</html>
