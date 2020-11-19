@@ -18,17 +18,21 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
-<table width="600" border="1">
+<div class="container">
+  <table class="table">
+    <thead class="thead-dark">
   <tr>
     <th width="100"> <div align="center">Name</div></th>
     <th width="350"> <div align="center">Comment </div></th>
     <th width="150"> <div align="center">Link </div></th>
     <th width="300"><div align="center">Action </div></th>
   </tr>
+  </thead>
 <?php
 while($Result = mysqli_fetch_array($res))
 {
 ?>
+<tbody>
   <tr>
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
@@ -38,6 +42,7 @@ while($Result = mysqli_fetch_array($res))
         <a href="form.html" class="btn btn-warning" onclick="alert('เพิ่มข้อมูล')">เพิ่ม</a>
     </td>
   </tr>
+  </tbody>
 <?php
 }
 ?>
