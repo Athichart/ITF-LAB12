@@ -39,7 +39,6 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Link'];?></td>
     <td><a href="modify.php?ID=<?php echo $Result['ID']?>" class="btn btn-success" onclick="alert('แก้ไขข้อมูล')">แก้ไข</a>
         <a href="del.php?ID=<?php echo $Result['ID']?>" class="btn btn-danger" onclick="alert('ลบข้อมูล')">ลบ</a>
-        <a href="form.html" class="btn btn-warning" onclick="alert('เพิ่มข้อมูล')">เพิ่ม</a>
     </td>
   </tr>
   </tbody>
@@ -47,6 +46,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
+<a href="form.html" class="btn btn-warning" onclick="alert('เพิ่มข้อมูล')">เพิ่ม</a>
 <?php
 mysqli_close($conn);
 ?>
